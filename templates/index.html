@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Promoção Relâmpago</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fcd703;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            padding: 30px 40px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .titulo {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            color: #b10000;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .preco {
+            font-size: 48px;
+            color: #ff0000;
+            font-weight: bold;
+            margin: 10px 0 25px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c40000;
+        }
+
+        .rodape {
+            font-size: 12px;
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">🎉 PROMOÇÃO RELÂMPAGO 🎉</div>
+        <div class="subtitulo">Ticket Ida e Volta</div>
+        <div class="preco">R$ 7,00</div>
+
+        <form action="/cadastro" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha do E-mail:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button type="submit">Quero meu ticket!</button>
+        </form>
+
+        <div class="rodape">* Promoção válida por tempo limitado</div>
+    </div>
+</body>
+</html>
